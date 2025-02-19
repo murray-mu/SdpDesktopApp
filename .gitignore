@@ -1,0 +1,7 @@
+DerivedData/
+xcuserdata/
+signing/
+Pods/
+local/
+local.bak/
+workspace-settings-overrides.xcconfig
