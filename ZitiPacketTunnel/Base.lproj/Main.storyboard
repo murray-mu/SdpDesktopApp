@@ -16,17 +16,17 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="SDP Desktop App" id="1Xt-HY-uBw">
-                                <menu key="submenu" title="SDP Desktop App" systemMenu="apple" id="uQy-DD-JDr">
+                            <menuItem title="SDP LeadingFox App" id="1Xt-HY-uBw">
+                                <menu key="submenu" title="SDP LeadingFox App" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About SDP Desktop App" id="5kV-Vb-QxS">
+                                        <menuItem title="About SDP LeadingFox App" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit SDP Desktop App" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit SDP LeadingFox App" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -48,7 +48,7 @@
             <objects>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="SDP Desktop App" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="SDP LeadingFox App" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="667" height="525"/>
@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="-74" y="250"/>
         </scene>
-        <!--SDP Desktop App Log Rotate Config-->
+        <!--SDP LeadingFox App Log Rotate Config-->
         <scene sceneID="Csi-Dk-8zL">
             <objects>
-                <viewController title="SDP Desktop App Log Rotate Config" storyboardIdentifier="LOG_ROTATION_VIEW_CONTROLLER" id="fpu-wK-uPF" customClass="LogRotationConfigViewController" customModule="Ziti_Desktop_Edge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SDP LeadingFox App Log Rotate Config" storyboardIdentifier="LOG_ROTATION_VIEW_CONTROLLER" id="fpu-wK-uPF" customClass="LogRotationConfigViewController" customModule="Ziti_Desktop_Edge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="wfF-ui-KgW">
                         <rect key="frame" x="0.0" y="0.0" width="378" height="269"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -335,7 +335,7 @@ Gw
         <scene sceneID="dH0-xe-wp3">
             <objects>
                 <windowController storyboardIdentifier="LOG_ROTATION_WINDOW" showSeguePresentationStyle="single" id="4gk-5C-zmf" sceneMemberID="viewController">
-                    <window key="window" title="SDP Desktop App Log Rotate" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="REZ-vL-e9e">
+                    <window key="window" title="SDP LeadingFox App Log Rotate" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="REZ-vL-e9e">
                         <windowStyleMask key="styleMask" titled="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="268" y="330" width="480" height="270"/>
