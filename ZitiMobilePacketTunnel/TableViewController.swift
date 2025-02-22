@@ -397,40 +397,40 @@ class TableViewController: UITableViewController, UIDocumentPickerDelegate, MFMa
             }
         } else if indexPath.section == 2 && indexPath.row == 0 {
             // quick 'n dirty support email composer.  TODO: Look into Instabug
-            let supportEmail = Bundle.main.infoDictionary?["ZitiSupportEmail"] as? String ?? ""
-            let supportSubj = Bundle.main.infoDictionary?["ZitiSupportSubject"] as? String ?? ""
-            if MFMailComposeViewController.canSendMail() {
-                let mail = MFMailComposeViewController()
-                mail.mailComposeDelegate = self
-                mail.setSubject(supportSubj)
-                mail.setToRecipients([supportEmail])
-                mail.setMessageBody("\n\n\nVersion: \(Version.str)\nOS \(Version.osVersion)\nDevice: \(deviceName())", isHTML: false)
-                if let logger = Logger.shared {
-                    if let url = logger.currLog(forTag: Logger.TUN_TAG), let data = try? Data(contentsOf: url) {
-                        mail.addAttachmentData(data, mimeType: "text/plain", fileName: url.lastPathComponent)
-                        let prev = url.appendingPathExtension("1")
-                        if let prevData = try? Data(contentsOf: prev) {
-                            mail.addAttachmentData(prevData, mimeType: "text/plain", fileName: prev.lastPathComponent)
-                        }
-                    }
-                    if let url = logger.currLog(forTag: Logger.APP_TAG), let data = try? Data(contentsOf: url) {
-                        mail.addAttachmentData(data, mimeType: "text/plain", fileName: url.lastPathComponent)
-                        let prev = url.appendingPathExtension("1")
-                        if let prevData = try? Data(contentsOf: prev) {
-                            mail.addAttachmentData(prevData, mimeType: "text/plain", fileName: prev.lastPathComponent)
-                        }
-                    }
-                }
-                self.present(mail, animated: true)
-            } else {
-                zLog.warn("Mail view controller not available")
-                let alert = UIAlertController(
-                    title:"Mail view not available",
-                    message: "Please email \(supportEmail) for assistance",
-                    preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default))
-                self.present(alert, animated: true, completion: nil)
-            }
+//            let supportEmail = Bundle.main.infoDictionary?["ZitiSupportEmail"] as? String ?? ""
+//            let supportSubj = Bundle.main.infoDictionary?["ZitiSupportSubject"] as? String ?? ""
+//            if MFMailComposeViewController.canSendMail() {
+//                let mail = MFMailComposeViewController()
+//                mail.mailComposeDelegate = self
+//                mail.setSubject(supportSubj)
+//                mail.setToRecipients([supportEmail])
+//                mail.setMessageBody("\n\n\nVersion: \(Version.str)\nOS \(Version.osVersion)\nDevice: \(deviceName())", isHTML: false)
+//                if let logger = Logger.shared {
+//                    if let url = logger.currLog(forTag: Logger.TUN_TAG), let data = try? Data(contentsOf: url) {
+//                        mail.addAttachmentData(data, mimeType: "text/plain", fileName: url.lastPathComponent)
+//                        let prev = url.appendingPathExtension("1")
+//                        if let prevData = try? Data(contentsOf: prev) {
+//                            mail.addAttachmentData(prevData, mimeType: "text/plain", fileName: prev.lastPathComponent)
+//                        }
+//                    }
+//                    if let url = logger.currLog(forTag: Logger.APP_TAG), let data = try? Data(contentsOf: url) {
+//                        mail.addAttachmentData(data, mimeType: "text/plain", fileName: url.lastPathComponent)
+//                        let prev = url.appendingPathExtension("1")
+//                        if let prevData = try? Data(contentsOf: prev) {
+//                            mail.addAttachmentData(prevData, mimeType: "text/plain", fileName: prev.lastPathComponent)
+//                        }
+//                    }
+//                }
+//                self.present(mail, animated: true)
+//            } else {
+//                zLog.warn("Mail view controller not available")
+//                let alert = UIAlertController(
+//                    title:"Mail view not available",
+//                    message: "Please email \(supportEmail) for assistance",
+//                    preferredStyle: .alert)
+//                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default))
+//                self.present(alert, animated: true, completion: nil)
+//            }
         } else if indexPath.section == 2 && indexPath.row == 1 {
             let zitiHelpUrl = Bundle.main.infoDictionary?["ZitiHelpURL"] as? String ?? ""
             if let url = URL(string: zitiHelpUrl) {

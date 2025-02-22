@@ -48,7 +48,7 @@ func performKeyEquivalent(with event: NSEvent, from target:Any) -> Bool {
 
 class EditableNSTextField: NSTextField {
     override func performKeyEquivalent(with event: NSEvent) -> Bool {
-        if Ziti_Desktop_Edge.performKeyEquivalent(with: event, from: self) {
+        if C8.performKeyEquivalent(with: event, from: self) {
             return true
         }
         return super.performKeyEquivalent(with: event)
@@ -57,7 +57,7 @@ class EditableNSTextField: NSTextField {
 
 class EditableNSTextView: NSTextView {
     override func performKeyEquivalent(with event: NSEvent) -> Bool {
-        if Ziti_Desktop_Edge.performKeyEquivalent(with: event, from: self) {
+        if C8.performKeyEquivalent(with: event, from: self) {
             return true
         }
         return super.performKeyEquivalent(with: event)

@@ -13,13 +13,13 @@
         <!--Ziti Packet Tunnel-->
         <scene sceneID="vuh-VM-vBG">
             <objects>
-                <tableViewController title="Ziti Packet Tunnel" id="vfh-An-ZaB" customClass="TableViewController" customModule="Ziti_Mobile_Edge" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Ziti Packet Tunnel" id="vfh-An-ZaB" customClass="TableViewController" customModule="C8" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="3VO-3W-NJb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="STATUS_CELL" id="Uel-Gr-Ez3" customClass="StatusCell" customModule="Ziti_Mobile_Edge" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="STATUS_CELL" id="Uel-Gr-Ez3" customClass="StatusCell" customModule="C8" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="375" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Uel-Gr-Ez3" id="9OX-pE-rMf">
@@ -191,7 +191,7 @@
                             <outlet property="delegate" destination="vfh-An-ZaB" id="Lpd-Ts-aaX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Ziti Mobile Edge" id="YH1-Ih-2F5">
+                    <navigationItem key="navigationItem" title="C8" id="YH1-Ih-2F5">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Qdl-Q1-fyC"/>
                     </navigationItem>
                 </tableViewController>
@@ -202,7 +202,7 @@
         <!--About-->
         <scene sceneID="9m4-Di-2Rs">
             <objects>
-                <tableViewController title="About" id="xyx-3R-jDG" customClass="AboutViewController" customModule="Ziti_Mobile_Edge" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="About" id="xyx-3R-jDG" customClass="AboutViewController" customModule="C8" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="O35-1s-tjY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -239,7 +239,7 @@
         <!--Third Party Licenses-->
         <scene sceneID="U5B-al-AWf">
             <objects>
-                <viewController storyboardIdentifier="NOTICES_VC" title="Third Party Licenses" id="95V-86-Dno" customClass="NoticesViewController" customModule="Ziti_Mobile_Edge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NOTICES_VC" title="Third Party Licenses" id="95V-86-Dno" customClass="NoticesViewController" customModule="C8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IrU-VE-s1q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,7 +271,7 @@
         <!--Advanced-->
         <scene sceneID="RcF-9h-Unx">
             <objects>
-                <tableViewController title="Advanced" id="ynr-DO-Usg" customClass="AdvancedViewController" customModule="Ziti_Mobile_Edge" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Advanced" id="ynr-DO-Usg" customClass="AdvancedViewController" customModule="C8" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="kTx-dO-DeZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -351,7 +351,7 @@
         <!--Snapshot-->
         <scene sceneID="49G-8q-u1h">
             <objects>
-                <viewController title="Snapshot" id="nqa-vx-FKF" customClass="SnapshotViewController" customModule="Ziti_Mobile_Edge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Snapshot" id="nqa-vx-FKF" customClass="SnapshotViewController" customModule="C8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jT3-qu-TLy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -385,27 +385,27 @@
         <!--Identity-->
         <scene sceneID="49E-8f-NUH">
             <objects>
-                <tableViewController title="Identity" id="pCc-hL-rsJ" customClass="IdentityViewController" customModule="Ziti_Mobile_Edge" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Identity" id="pCc-hL-rsJ" customClass="IdentityViewController" customModule="C8" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Ehu-SQ-hmr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="IDENTITY_ENABLED_CELL" id="iCi-1K-N52" customClass="IdentityEnabledCell" customModule="Ziti_Mobile_Edge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="43"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="IDENTITY_ENABLED_CELL" id="iCi-1K-N52" customClass="IdentityEnabledCell" customModule="C8" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iCi-1K-N52" id="oQt-nn-MH1">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nfb-HR-QcV">
-                                            <rect key="frame" x="306" y="6" width="51" height="31"/>
+                                            <rect key="frame" x="306" y="6.5" width="51" height="31"/>
                                             <connections>
                                                 <action selector="valueChanged:" destination="iCi-1K-N52" eventType="valueChanged" id="aeK-Ss-l4s"/>
                                             </connections>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enabled" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tO-r5-7QD">
-                                            <rect key="frame" x="16" y="11" width="290" height="21"/>
+                                            <rect key="frame" x="16" y="11" width="290" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -426,8 +426,8 @@
                                     <outlet property="switch" destination="nfb-HR-QcV" id="TYu-Dj-ZC3"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MFA_CELL" id="RZx-7V-gHz" customClass="MfaEnabledCell" customModule="Ziti_Mobile_Edge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="98.5" width="375" height="44.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MFA_CELL" id="RZx-7V-gHz" customClass="MfaEnabledCell" customModule="C8" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="99" width="375" height="44.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RZx-7V-gHz" id="i0D-Ai-QmE">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
@@ -469,8 +469,8 @@
                                     <outlet property="mfaSwitch" destination="7XE-l7-nUe" id="Hbb-8D-Ata"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MFA_AUTH_NOW_CELL" id="b6g-3n-v3A" customClass="MfaAuthNowCell" customModule="Ziti_Mobile_Edge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="143" width="375" height="44.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MFA_AUTH_NOW_CELL" id="b6g-3n-v3A" customClass="MfaAuthNowCell" customModule="C8" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="143.5" width="375" height="44.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b6g-3n-v3A" id="h5C-47-fC3">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
@@ -494,8 +494,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MFA_RECOVERY_CODES_CELL" id="rC6-ER-6Je" customClass="MfaCodesCell" customModule="Ziti_Mobile_Edge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="187.5" width="375" height="44.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MFA_RECOVERY_CODES_CELL" id="rC6-ER-6Je" customClass="MfaCodesCell" customModule="C8" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="188" width="375" height="44.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rC6-ER-6Je" id="lcO-1a-NFL">
                                     <rect key="frame" x="0.0" y="0.0" width="348.5" height="44.5"/>
@@ -519,8 +519,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MFA_NEW_RECOVERY_CODES_CELL" id="wpa-kD-lSl" customClass="MfaNewCodesCell" customModule="Ziti_Mobile_Edge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="232" width="375" height="44.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MFA_NEW_RECOVERY_CODES_CELL" id="wpa-kD-lSl" customClass="MfaNewCodesCell" customModule="C8" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="232.5" width="375" height="44.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wpa-kD-lSl" id="cHg-BV-HH3">
                                     <rect key="frame" x="0.0" y="0.0" width="348.5" height="44.5"/>
@@ -542,8 +542,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="IDENTITY_FORGET_CELL" id="u4k-bC-gec" customClass="ForgetIdentityCell" customModule="Ziti_Mobile_Edge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="276.5" width="375" height="44.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="IDENTITY_FORGET_CELL" id="u4k-bC-gec" customClass="ForgetIdentityCell" customModule="C8" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="277" width="375" height="44.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u4k-bC-gec" id="MJa-RP-ow0">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
@@ -566,7 +566,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="IDENTITY_VALUE_CELL" textLabel="vOP-BG-eyS" detailTextLabel="V0S-fx-vWo" style="IBUITableViewCellStyleValue1" id="gVp-CX-5Le">
-                                <rect key="frame" x="0.0" y="321" width="375" height="43.5"/>
+                                <rect key="frame" x="0.0" y="321.5" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gVp-CX-5Le" id="uNH-jV-Esk">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -589,8 +589,8 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="IDENTITY_ENROLL_CELL" id="sD6-ei-8jM" customClass="EnrollIdentityCell" customModule="Ziti_Mobile_Edge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="364.5" width="375" height="44.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="IDENTITY_ENROLL_CELL" id="sD6-ei-8jM" customClass="EnrollIdentityCell" customModule="C8" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="365" width="375" height="44.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sD6-ei-8jM" id="3RF-Kt-OcG">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
@@ -613,7 +613,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="IDENTITY_SERVICE_CELL" textLabel="FDB-PX-0mS" detailTextLabel="c0A-RF-6Nm" style="IBUITableViewCellStyleSubtitle" id="6gy-KC-brK">
-                                <rect key="frame" x="0.0" y="409" width="375" height="43.5"/>
+                                <rect key="frame" x="0.0" y="409.5" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6gy-KC-brK" id="6YQ-gf-oZt">
                                     <rect key="frame" x="0.0" y="0.0" width="348.5" height="43.5"/>
@@ -658,7 +658,7 @@
         <!--Service-->
         <scene sceneID="6WC-3c-U6V">
             <objects>
-                <tableViewController title="Service" id="3bu-kB-osn" customClass="ServiceViewController" customModule="Ziti_Mobile_Edge" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Service" id="3bu-kB-osn" customClass="ServiceViewController" customModule="C8" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="qFZ-vZ-ZNQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -703,7 +703,7 @@
         <!--Recovery Codes-->
         <scene sceneID="4CP-8S-yp1">
             <objects>
-                <tableViewController title="Recovery Codes" id="Cyn-U1-nJP" customClass="MfaCodesViewController" customModule="Ziti_Mobile_Edge" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Recovery Codes" id="Cyn-U1-nJP" customClass="MfaCodesViewController" customModule="C8" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="iT7-uk-l6X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -741,7 +741,7 @@
         <!--Setup MFA-->
         <scene sceneID="t0C-63-1dO">
             <objects>
-                <viewController storyboardIdentifier="MFA_VERIFY_VC" title="Setup MFA" id="IFf-fH-LGL" customClass="MfaVerifyViewController" customModule="Ziti_Mobile_Edge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MFA_VERIFY_VC" title="Setup MFA" id="IFf-fH-LGL" customClass="MfaVerifyViewController" customModule="C8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wiS-Mg-Sts">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -835,7 +835,7 @@
         <!--Mfa Code View Controller-->
         <scene sceneID="xNj-ba-Lm7">
             <objects>
-                <viewController storyboardIdentifier="MFA_CODE_VC" id="3Nc-tc-gxP" customClass="MfaCodeViewController" customModule="Ziti_Mobile_Edge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MFA_CODE_VC" id="3Nc-tc-gxP" customClass="MfaCodeViewController" customModule="C8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6zi-sx-Knu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -898,13 +898,13 @@
         <!--Tunnel Configuration-->
         <scene sceneID="E7s-lk-x1Q">
             <objects>
-                <tableViewController title="Tunnel Configuration" id="LJo-yi-Vtt" customClass="TunnelSettingsViewController" customModule="Ziti_Mobile_Edge" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Tunnel Configuration" id="LJo-yi-Vtt" customClass="TunnelSettingsViewController" customModule="C8" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="1wX-0O-xZG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TUNNEL_SETTING_CELL" id="cG6-G7-40L" customClass="TunnelSettingsCell" customModule="Ziti_Mobile_Edge" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TUNNEL_SETTING_CELL" id="cG6-G7-40L" customClass="TunnelSettingsCell" customModule="C8" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cG6-G7-40L" id="t38-BF-a35">
@@ -943,7 +943,7 @@
                                     <outlet property="value" destination="84W-Ec-uAg" id="utM-gY-2dl"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LOW_POWER_MODE_CELL" id="DzQ-gs-oi9" customClass="LowPowerModeCell" customModule="Ziti_Mobile_Edge" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LOW_POWER_MODE_CELL" id="DzQ-gs-oi9" customClass="LowPowerModeCell" customModule="C8" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="99" width="375" height="44.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DzQ-gs-oi9" id="eJY-xG-Zcm">
@@ -989,7 +989,7 @@
         <!--Logging-->
         <scene sceneID="Blo-l1-PVg">
             <objects>
-                <tableViewController title="Logging" id="f8K-2M-T8j" customClass="LogsTableViewController" customModule="Ziti_Mobile_Edge" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Logging" id="f8K-2M-T8j" customClass="LogsTableViewController" customModule="C8" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="cvx-SL-EzW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1075,7 +1075,7 @@
         <!--Log Level View Controller-->
         <scene sceneID="XgC-wT-DF6">
             <objects>
-                <tableViewController id="aaZ-SM-87r" customClass="LogLevelViewController" customModule="Ziti_Mobile_Edge" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="aaZ-SM-87r" customClass="LogLevelViewController" customModule="C8" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ofn-Pz-MzV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1224,7 +1224,7 @@
         <!--Log View Controller-->
         <scene sceneID="AEC-9b-RcY">
             <objects>
-                <viewController storyboardIdentifier="LOG_VC" id="JgN-jO-XZ4" customClass="LogViewController" customModule="Ziti_Mobile_Edge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LOG_VC" id="JgN-jO-XZ4" customClass="LogViewController" customModule="C8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pNc-9a-YZz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

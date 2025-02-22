@@ -220,7 +220,7 @@
 /* Begin PBXFileReference section */
 		5A0004922832C3DF00351FE2 /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 		5A00FB9E2849731D00479380 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		5A02AAB4206EBD7E006261C6 /* C8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A02AAB4206EBD7E006261C6 /* Ziti Desktop Edge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ziti Desktop Edge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A02AAB7206EBD7E006261C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A02AAB9206EBD7E006261C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A02AABB206EBD7E006261C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -383,7 +383,7 @@
 		5A02AAB5206EBD7E006261C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A02AAB4206EBD7E006261C6 /* C8.app */,
+				5A02AAB4206EBD7E006261C6 /* Ziti Desktop Edge.app */,
 				5A02AACB206EBDD5006261C6 /* PacketTunnelProvider.appex */,
 				5A2EA2C9209B750A00437608 /* C8.app */,
 				5A2EA2DF209B754400437608 /* MobilePacketTunnelProvider.appex */,
@@ -569,9 +569,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5A02AAB3206EBD7E006261C6 /* C8 */ = {
+		5A02AAB3206EBD7E006261C6 /* Ziti Desktop Edge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A02AAC4206EBD7E006261C6 /* Build configuration list for PBXNativeTarget "C8" */;
+			buildConfigurationList = 5A02AAC4206EBD7E006261C6 /* Build configuration list for PBXNativeTarget "Ziti Desktop Edge" */;
 			buildPhases = (
 				5A02AAB0206EBD7E006261C6 /* Sources */,
 				5A02AAB1206EBD7E006261C6 /* Frameworks */,
@@ -584,12 +584,12 @@
 			dependencies = (
 				5A02AAD2206EBDD5006261C6 /* PBXTargetDependency */,
 			);
-			name = "C8";
+			name = "Ziti Desktop Edge";
 			packageProductDependencies = (
 				5AF4624F29CA4D8800A06DFA /* CZiti */,
 			);
 			productName = ZitiPacketTunnel;
-			productReference = 5A02AAB4206EBD7E006261C6 /* C8.app */;
+			productReference = 5A02AAB4206EBD7E006261C6 /* Ziti Desktop Edge.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5A02AACA206EBDD5006261C6 /* PacketTunnelProvider */ = {
@@ -609,9 +609,9 @@
 			productReference = 5A02AACB206EBDD5006261C6 /* PacketTunnelProvider.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		5A2EA2C8209B750A00437608 /* C8 */ = {
+		5A2EA2C8209B750A00437608 /* Ziti Mobile Edge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A2EA2D8209B750C00437608 /* Build configuration list for PBXNativeTarget "C8" */;
+			buildConfigurationList = 5A2EA2D8209B750C00437608 /* Build configuration list for PBXNativeTarget "Ziti Mobile Edge" */;
 			buildPhases = (
 				5A2EA2C5209B750A00437608 /* Sources */,
 				5A2EA2C6209B750A00437608 /* Frameworks */,
@@ -625,7 +625,7 @@
 				5A2EA2E6209B754500437608 /* PBXTargetDependency */,
 				5AF3DCB224B52642005047BC /* PBXTargetDependency */,
 			);
-			name = "C8";
+			name = "Ziti Mobile Edge";
 			packageProductDependencies = (
 				5AF4624F29CA4D8800A06DFA /* CZiti */,
 			);
@@ -787,9 +787,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5A02AAB3206EBD7E006261C6 /* C8 */,
+				5A02AAB3206EBD7E006261C6 /* Ziti Desktop Edge */,
 				5A02AACA206EBDD5006261C6 /* PacketTunnelProvider */,
-				5A2EA2C8209B750A00437608 /* C8 */,
+				5A2EA2C8209B750A00437608 /* Ziti Mobile Edge */,
 				5A2EA2DE209B754400437608 /* MobilePacketTunnelProvider */,
 				5AF3DCA824B52642005047BC /* MobileShare */,
 			);
@@ -1475,7 +1475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A02AAC4206EBD7E006261C6 /* Build configuration list for PBXNativeTarget "C8" */ = {
+		5A02AAC4206EBD7E006261C6 /* Build configuration list for PBXNativeTarget "Ziti Desktop Edge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A02AAC5206EBD7E006261C6 /* Debug */,
@@ -1493,7 +1493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A2EA2D8209B750C00437608 /* Build configuration list for PBXNativeTarget "C8" */ = {
+		5A2EA2D8209B750C00437608 /* Build configuration list for PBXNativeTarget "Ziti Mobile Edge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A2EA2D9209B750C00437608 /* Debug */,

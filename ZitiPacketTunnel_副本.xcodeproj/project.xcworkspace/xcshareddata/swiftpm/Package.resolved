@@ -1,0 +1,15 @@
+{
+  "originHash" : "733c24ff39fcde696026d38467522771f852a707fc493ffc52802bee970b6153",
+  "pins" : [
+    {
+      "identity" : "ziti-sdk-swift-dist",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/openziti/ziti-sdk-swift-dist.git",
+      "state" : {
+        "branch" : "alpha",
+        "revision" : "7506130be32b297a49e908e9e2eca3a0cac83db1"
+      }
+    }
+  ],
+  "version" : 3
+}

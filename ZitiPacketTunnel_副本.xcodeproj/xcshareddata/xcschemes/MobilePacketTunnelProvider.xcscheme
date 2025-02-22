@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A02AACA206EBDD5006261C6"
-               BuildableName = "PacketTunnelProvider.appex"
-               BlueprintName = "PacketTunnelProvider"
+               BlueprintIdentifier = "5A2EA2DE209B754400437608"
+               BuildableName = "MobilePacketTunnelProvider.appex"
+               BlueprintName = "MobilePacketTunnelProvider"
                ReferencedContainer = "container:ZitiPacketTunnel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,9 +29,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A02AAB3206EBD7E006261C6"
-               BuildableName = "C8.app"
-               BlueprintName = "C8"
+               BlueprintIdentifier = "5A2EA2C8209B750A00437608"
+               BuildableName = "Ziti Mobile Edge.app"
+               BlueprintName = "Ziti Mobile Edge"
                ReferencedContainer = "container:ZitiPacketTunnel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A02AACA206EBDD5006261C6"
-            BuildableName = "PacketTunnelProvider.appex"
-            BlueprintName = "PacketTunnelProvider"
+            BlueprintIdentifier = "5A2EA2DE209B754400437608"
+            BuildableName = "MobilePacketTunnelProvider.appex"
+            BlueprintName = "MobilePacketTunnelProvider"
             ReferencedContainer = "container:ZitiPacketTunnel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,20 +66,16 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <RemoteRunnable
-         runnableDebuggingMode = "0"
-         BundleIdentifier = "io.netfoundry.ZitiPacketTunnel"
-         RemotePath = "/Applications/ZitiPacketTunnel.app">
-      </RemoteRunnable>
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A02AAB3206EBD7E006261C6"
-            BuildableName = "C8.app"
-            BlueprintName = "C8"
+            BlueprintIdentifier = "5A2EA2C8209B750A00437608"
+            BuildableName = "Ziti Mobile Edge.app"
+            BlueprintName = "Ziti Mobile Edge"
             ReferencedContainer = "container:ZitiPacketTunnel.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -92,9 +88,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A02AAB3206EBD7E006261C6"
-            BuildableName = "C8.app"
-            BlueprintName = "C8"
+            BlueprintIdentifier = "5A2EA2C8209B750A00437608"
+            BuildableName = "Ziti Mobile Edge.app"
+            BlueprintName = "Ziti Mobile Edge"
             ReferencedContainer = "container:ZitiPacketTunnel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
