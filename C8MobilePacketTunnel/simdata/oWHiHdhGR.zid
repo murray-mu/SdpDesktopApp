@@ -1,0 +1,50 @@
+{
+  "claims": {
+    "exp": 1604594545,
+    "jti": "2e939c42-1798-47d2-b93e-09650bde05fc",
+    "iss": "https://18.235.227.41:443",
+    "em": "ott",
+    "sub": "oWHiHdhGR"
+  },
+  "enabled": true,
+  "controllerVersion": "v0.17.4",
+  "services": [
+    {
+      "status": {
+        "status": "Available",
+        "lastUpdatedAt": 1611764200.627361,
+        "needsRestart": false
+      },
+      "id": "v5lTXkd8b",
+      "dns": {
+        "port": 80,
+        "hostname": "kentest-client.ziti",
+        "interceptIp": "100.64.0.34"
+      },
+      "name": "kentest-service.ziti"
+    },
+    {
+      "status": {
+        "status": "Available",
+        "lastUpdatedAt": 1611764200.6591868,
+        "needsRestart": false
+      },
+      "id": "T7ZsFHKNF",
+      "protocols": "tcp, udp",
+      "addresses": "backoffice-cuevasint.client.ziti",
+      "portRanges": "80-80",
+      "name": "backoffice-cuevasint.service.ziti"
+    }
+  ],
+  "edgeStatus": {
+    "status": "Available",
+    "lastContactAt": 1611764200.703027
+  },
+  "enrolled": true,
+  "czid": {
+    "id": "oWHiHdhGR",
+    "ztAPI": "https://18.235.227.41:443",
+    "name": "dave_hart-laptop1",
+    "ca": ""
+  }
+}

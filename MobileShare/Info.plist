@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.48</string>
+	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>0</string>
 	<key>NSExtension</key>
@@ -32,9 +32,9 @@
                 $extensionItem.attachments,
                 $attachment,
                 (
-                ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "org.openziti.ziti.ott.jwt"
-                || ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "org.openziti.ziti.ott.zott"
-                || ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "org.openziti.ziti.ott.ziti"
+                ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;org.openziti.ziti.ott.jwt&quot;
+                || ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;org.openziti.ziti.ott.zott&quot;
+                || ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;org.openziti.ziti.ott.ziti&quot;
                 )
                 ).@count == 1
                 ).@count == 1
@@ -47,9 +47,9 @@
 	</dict>
 	<key>TeamIdentifierPrefix</key>
 	<string>$(TeamIdentifierPrefix)</string>
-    <key>IOS_APP_IDENTIFIER</key>
-    <string>$(IOS_APP_IDENTIFIER)</string>
-    <key>IOS_EXT_IDENTIFIER</key>
-    <string>$(IOS_EXT_IDENTIFIER)</string>
+	<key>IOS_APP_IDENTIFIER</key>
+	<string>$(IOS_APP_IDENTIFIER)</string>
+	<key>IOS_EXT_IDENTIFIER</key>
+	<string>$(IOS_EXT_IDENTIFIER)</string>
 </dict>
 </plist>
