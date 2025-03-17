@@ -26,9 +26,9 @@ class MainMenuBar : NSObject, NSWindowDelegate {
     private var menu:NSMenu!
     private var tunStatusItem:NSMenuItem!
     private var tunConnectItem:NSMenuItem!
-    private var snapshotItem:NSMenuItem!
+//    private var snapshotItem:NSMenuItem!
     private var showDocItem:NSMenuItem!
-    private var logLevelMenu:NSMenu!
+//    private var logLevelMenu:NSMenu!
     
     private var identityItems:[NSMenuItem] = []
     
@@ -49,49 +49,49 @@ class MainMenuBar : NSObject, NSWindowDelegate {
         menu.addItem(showDocItem)
         
         // Log Menu
-        let logMenuItem = newMenuItem(title: "Logging", action: nil)
-        menu.addItem(logMenuItem)
-        let logMenu = NSMenu()
-        
-        logMenu.addItem(newMenuItem(title: "Packet Tunnel...", action: #selector(MainMenuBar.showPacketTunnelLog(_:))))
-        logMenu.addItem(newMenuItem(title: "Application...", action: #selector(MainMenuBar.showApplicationLog(_:))))
-        logMenu.addItem(NSMenuItem.separator())
-        
-        logMenu.addItem(newMenuItem(title: "Log Rotation...", action: #selector(MainMenuBar.showLogRotationConfig(_:))))
-        logMenu.addItem(NSMenuItem.separator())
-                
-        let logLevelMenuItem = newMenuItem(title: "Level", action: nil)
-        logMenu.addItem(logLevelMenuItem)
-        logLevelMenu = NSMenu()
-        logLevelMenu.addItem(newMenuItem(title: "FATAL",
-                                         action: #selector(MainMenuBar.selectLogLevel(_:)),
-                                         tag: Int(ZitiLog.LogLevel.NONE.rawValue)))
-        logLevelMenu.addItem(newMenuItem(title: "ERROR",
-                                         action: #selector(MainMenuBar.selectLogLevel(_:)),
-                                         tag: Int(ZitiLog.LogLevel.ERROR.rawValue)))
-        logLevelMenu.addItem(newMenuItem(title: "WARN",
-                                         action: #selector(MainMenuBar.selectLogLevel(_:)),
-                                         tag: Int(ZitiLog.LogLevel.WARN.rawValue)))
-        logLevelMenu.addItem(newMenuItem(title: "INFO",
-                                         action: #selector(MainMenuBar.selectLogLevel(_:)),
-                                         tag: Int(ZitiLog.LogLevel.INFO.rawValue)))
-        logLevelMenu.addItem(newMenuItem(title: "DEBUG",
-                                         action: #selector(MainMenuBar.selectLogLevel(_:)),
-                                         tag: Int(ZitiLog.LogLevel.DEBUG.rawValue)))
-        logLevelMenu.addItem(newMenuItem(title: "VERBOSE",
-                                         action: #selector(MainMenuBar.selectLogLevel(_:)),
-                                         tag: Int(ZitiLog.LogLevel.VERBOSE.rawValue)))
-        logLevelMenu.addItem(newMenuItem(title: "TRACE",
-                                         action: #selector(MainMenuBar.selectLogLevel(_:)),
-                                         tag: Int(ZitiLog.LogLevel.TRACE.rawValue)))
-        logMenu.setSubmenu(logLevelMenu, for: logLevelMenuItem)
-        updateLogLevelMenu()
-        
-        menu.setSubmenu(logMenu, for: logMenuItem)
+//        let logMenuItem = newMenuItem(title: "Logging", action: nil)
+//        menu.addItem(logMenuItem)
+//        let logMenu = NSMenu()
+//        
+//        logMenu.addItem(newMenuItem(title: "Packet Tunnel...", action: #selector(MainMenuBar.showPacketTunnelLog(_:))))
+//        logMenu.addItem(newMenuItem(title: "Application...", action: #selector(MainMenuBar.showApplicationLog(_:))))
+//        logMenu.addItem(NSMenuItem.separator())
+//        
+//        logMenu.addItem(newMenuItem(title: "Log Rotation...", action: #selector(MainMenuBar.showLogRotationConfig(_:))))
+//        logMenu.addItem(NSMenuItem.separator())
+//                
+//        let logLevelMenuItem = newMenuItem(title: "Level", action: nil)
+//        logMenu.addItem(logLevelMenuItem)
+//        logLevelMenu = NSMenu()
+//        logLevelMenu.addItem(newMenuItem(title: "FATAL",
+//                                         action: #selector(MainMenuBar.selectLogLevel(_:)),
+//                                         tag: Int(ZitiLog.LogLevel.NONE.rawValue)))
+//        logLevelMenu.addItem(newMenuItem(title: "ERROR",
+//                                         action: #selector(MainMenuBar.selectLogLevel(_:)),
+//                                         tag: Int(ZitiLog.LogLevel.ERROR.rawValue)))
+//        logLevelMenu.addItem(newMenuItem(title: "WARN",
+//                                         action: #selector(MainMenuBar.selectLogLevel(_:)),
+//                                         tag: Int(ZitiLog.LogLevel.WARN.rawValue)))
+//        logLevelMenu.addItem(newMenuItem(title: "INFO",
+//                                         action: #selector(MainMenuBar.selectLogLevel(_:)),
+//                                         tag: Int(ZitiLog.LogLevel.INFO.rawValue)))
+//        logLevelMenu.addItem(newMenuItem(title: "DEBUG",
+//                                         action: #selector(MainMenuBar.selectLogLevel(_:)),
+//                                         tag: Int(ZitiLog.LogLevel.DEBUG.rawValue)))
+//        logLevelMenu.addItem(newMenuItem(title: "VERBOSE",
+//                                         action: #selector(MainMenuBar.selectLogLevel(_:)),
+//                                         tag: Int(ZitiLog.LogLevel.VERBOSE.rawValue)))
+//        logLevelMenu.addItem(newMenuItem(title: "TRACE",
+//                                         action: #selector(MainMenuBar.selectLogLevel(_:)),
+//                                         tag: Int(ZitiLog.LogLevel.TRACE.rawValue)))
+//        logMenu.setSubmenu(logLevelMenu, for: logLevelMenuItem)
+//        updateLogLevelMenu()
+//        
+//        menu.setSubmenu(logMenu, for: logMenuItem)
         // End Log Menu
         
-        snapshotItem = newMenuItem(title: "Snapshot...", action: nil)
-        menu.addItem(snapshotItem)
+//        snapshotItem = newMenuItem(title: "Snapshot...", action: nil)
+//        menu.addItem(snapshotItem)
         
         menu.addItem(NSMenuItem.separator())
         menu.addItem(newMenuItem(title: "About \(appName)", action: #selector(MainMenuBar.about(_:))))
@@ -178,7 +178,7 @@ class MainMenuBar : NSObject, NSWindowDelegate {
     }
     
     func tunnelStatusDidChange(_ status:NEVPNStatus) {
-        snapshotItem.action = nil
+//        snapshotItem.action = nil
         switch status {
         case .connecting:
             tunStatusItem.title = "Status: Connecting..."
@@ -188,7 +188,7 @@ class MainMenuBar : NSObject, NSWindowDelegate {
         case .connected:
             tunStatusItem.title = "Status: Connected"
             tunConnectItem.title = "Disconnect"
-            snapshotItem.action = #selector(MainMenuBar.showSnapshot(_:))
+//            snapshotItem.action = #selector(MainMenuBar.showSnapshot(_:))
             
             if TunnelMgr.shared.allEnabledZidsFullyAvailable() {
                 statusItem.button?.image = NSImage(named:NSImage.Name("StatusBarConnected"))
@@ -347,10 +347,10 @@ class MainMenuBar : NSObject, NSWindowDelegate {
     }
     
     func updateLogLevelMenu() {
-        let level = ZitiLog.getLogLevel()
-        logLevelMenu.items.forEach { i in
-            i.state = Int32(i.tag) == level.rawValue ? .on : .off
-        }
+//        let level = ZitiLog.getLogLevel()
+//        logLevelMenu.items.forEach { i in
+//            i.state = Int32(i.tag) == level.rawValue ? .on : .off
+//        }
     }
     
     @objc func selectLogLevel(_ sender: NSMenuItem?) {
