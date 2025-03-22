@@ -233,7 +233,7 @@ class TableViewController: UITableViewController, UIDocumentPickerDelegate, MFMa
         if section == 1 {
             nRows = zids.count + 1
         } else if section == 2 {
-            nRows = 4
+            nRows = 1
         }
         return nRows
     }
@@ -278,14 +278,16 @@ class TableViewController: UITableViewController, UIDocumentPickerDelegate, MFMa
         } else {
             // feedback, help, advanced, about
             if indexPath.row == 0 {
-                cell = tableView.dequeueReusableCell(withIdentifier: "FEEDBACK_CELL", for: indexPath)
-            } else if indexPath.row == 1 {
-                cell = tableView.dequeueReusableCell(withIdentifier: "HELP_CELL", for: indexPath)
-            } else if indexPath.row == 2 {
+                //cell = tableView.dequeueReusableCell(withIdentifier: "FEEDBACK_CELL", for: indexPath)
                 cell = tableView.dequeueReusableCell(withIdentifier: "ADVANCED_CELL", for: indexPath)
-            } else {
-                cell = tableView.dequeueReusableCell(withIdentifier: "ABOUT_CELL", for: indexPath)
             }
+//            else if indexPath.row == 1 {
+//                cell = tableView.dequeueReusableCell(withIdentifier: "HELP_CELL", for: indexPath)
+//            } else if indexPath.row == 2 {
+//                cell = tableView.dequeueReusableCell(withIdentifier: "ADVANCED_CELL", for: indexPath)
+//            } else {
+//                cell = tableView.dequeueReusableCell(withIdentifier: "ABOUT_CELL", for: indexPath)
+//            }
         }
         return cell! // Don't let this happen!
     }

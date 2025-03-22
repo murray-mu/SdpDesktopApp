@@ -121,7 +121,7 @@ class ShareViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let cell = tableView.dequeueReusableCell(withIdentifier: "IDENTITY_CELL", for: indexPath as IndexPath)
             if indexPath.row == 1 {
                 cell.textLabel?.text = "Network"
-                cell.detailTextLabel?.text = zid?.czid?.ztAPI ?? "-"
+//                cell.detailTextLabel?.text = zid?.czid?.ztAPI ?? "-"
             } else if indexPath.row == 0 {
                 cell.textLabel?.text = "Id"
                 cell.detailTextLabel?.text = zid?.czid?.id ?? "-"

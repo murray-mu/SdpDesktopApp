@@ -34,7 +34,7 @@ class AdvancedViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,11 +62,12 @@ class AdvancedViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         if section == 0 {
             return "Advanced tunnel settings that will impact tunnel availability and performace."
-        } else if section == 1 {
-            return "Diagnostic logs that help us debug if you are having problems."
-        } else if section == 2 {
-            return "Snapshot of current connectivity state"
         }
+//        else if section == 1 {
+//            return "Diagnostic logs that help us debug if you are having problems."
+//        } else if section == 2 {
+//            return "Snapshot of current connectivity state"
+//        }
         return nil
     }
 
