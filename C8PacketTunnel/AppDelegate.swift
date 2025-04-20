@@ -39,6 +39,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         UserNotifications.shared.requestAuth()
     }
     
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         menuBar = MainMenuBar.shared
         

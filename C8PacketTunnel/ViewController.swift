@@ -20,7 +20,8 @@ import CZiti
 import UniformTypeIdentifiers
 import CoreImage
 import CoreImage.CIFilterBuiltins
-
+import Foundation
+import SystemConfiguration
 class ViewController: NSViewController, NSTextFieldDelegate {
     @IBOutlet weak var connectButton: NSButton!
     @IBOutlet weak var connectStatus: NSTextField!
@@ -63,6 +64,89 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     
     let notificationsPanel = NotificationsPanel()
     
+    func setProxyBypassDomainsAsync(forNetworkService service: String, domains: String) async throws {
+         let task = Process()
+         task.executableURL = URL(fileURLWithPath: "/usr/sbin/networksetup")
+         task.arguments = ["-setproxybypassdomains", service, domains]
+
+         let pipe = Pipe()
+         task.standardOutput = pipe
+         task.standardError = pipe
+
+         try  task.run() // Use async/await here
+         task.waitUntilExit()
+
+         let data = pipe.fileHandleForReading.readDataToEndOfFile()
+         let output = String(data: data, encoding: .utf8) ?? ""
+
+         if task.terminationStatus == 0 {
+             print("Successfully set proxy bypass domains for \(service) to \(domains)")
+             print("Output: \(output)")
+         } else {
+             print("Error setting proxy bypass domains:")
+             print("Exit code: \(task.terminationStatus)")
+             print("Output: \(output)")
+         }
+     }
+    func runWithAdminPrivileges() {
+        let script = "do shell script \"/usr/sbin/networksetup -setproxybypassdomains Wi-Fi c8.go\" with administrator privileges"
+        
+        let appleScript = NSAppleScript(source: script)
+        var errorDict: NSDictionary? = nil
+        
+        if let result = appleScript?.executeAndReturnError(&errorDict) {
+            print("Success: \(result.stringValue ?? "")")
+        } else if let error = errorDict {
+            print("Error: \(error)")
+        }
+    }
+
+    enum ProxyConfigError: Error {
+        case serviceNotFound
+        case configLockFailed
+        case applyFailed
+    }
+
+    func setProxyBypassDomains(serviceName: String, domains: [String]) throws {
+        // 获取系统配置访问权限
+        guard let prefs = SCPreferencesCreate(nil, "UpdateProxyBypass" as CFString, nil) else {
+            throw ProxyConfigError.configLockFailed
+        }
+        
+        // 获取所有网络服务列表
+        guard let services = SCNetworkServiceCopyAll(prefs) as? [SCNetworkService] else {
+            throw ProxyConfigError.serviceNotFound
+        }
+        
+        // 查找目标网络服务（如 Wi-Fi）
+        guard let targetService = services.first(where: { service in
+            SCNetworkServiceGetName(service) as String? == serviceName
+        }) else {
+            throw ProxyConfigError.serviceNotFound
+        }
+        
+        // 获取代理配置
+        guard let proxy = SCNetworkServiceCopyProtocol(targetService, kSCNetworkProtocolTypeProxies) else {
+            throw ProxyConfigError.serviceNotFound
+        }
+        
+        // 构造新的代理配置
+        var newProxies = SCNetworkProtocolGetConfiguration(proxy) as? [String: Any] ?? [:]
+        newProxies[kCFNetworkProxiesExceptionsList as String] = domains
+        newProxies[kCFNetworkProxiesHTTPEnable as String] = 1  // 确保代理启用
+        
+        // 应用配置
+        SCNetworkProtocolSetConfiguration(proxy, newProxies as CFDictionary)
+        
+        // 提交修改
+        guard SCPreferencesCommitChanges(prefs),
+              SCPreferencesApplyChanges(prefs) else {
+            throw ProxyConfigError.applyFailed
+        }
+        
+        // 通知系统更新
+        SCPreferencesSynchronize(prefs)
+    }
     func tunnelStatusDidChange(_ status:NEVPNStatus) {
         connectButton.isEnabled = true
         switch status {
@@ -73,6 +157,17 @@ class ViewController: NSViewController, NSTextFieldDelegate {
         case .connected:
             connectStatus.stringValue = "Connected"
             connectButton.title = "Stop the Link"
+            
+            Task {
+                 do {
+                     let networkService = "Wi-Fi"
+                     let bypassDomains = "c8.go"
+
+                     try await setProxyBypassDomainsAsync(forNetworkService: networkService, domains: bypassDomains)
+                 } catch {
+                     print("Async error: \(error)")
+                 }
+             }
             break
         case .disconnecting:
             connectStatus.stringValue = "Disconnecting..."
